@@ -9,7 +9,7 @@ function HeroSection() {
         <p className='p-4 text-xl bg-gradient-to-r from-gray-600  bg-clip-text  text-transparent  to-gray-300  text-center'>I am skilled in building full-stack applications, handling both frontend and backend development efficiently.</p>
        </div>
        <div className='flex mt-10'>
-        <Link href={"/contact"}>
+        <Link href="mailto:gupta.him31@gmail.com">
           <button className='bg-gray-300 w-[9rem] p-4 rounded-xl mr-4 hover:scale-110 text-black font-semibold'>Contact Me</button>
           </Link>
           <Link href={"/projects"}>

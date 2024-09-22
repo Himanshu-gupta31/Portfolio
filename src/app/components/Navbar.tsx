@@ -34,7 +34,7 @@ function Navbar() {
           icon: (
             <IconBrandGithub className="text-black dark:text-black" />
           ),
-          href: "/github",
+          href: "https://github.com/Himanshu-gupta31",
         },
         {
           title: "LinkedIn",
