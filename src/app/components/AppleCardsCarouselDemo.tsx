@@ -1,10 +1,8 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { TwitterTweetEmbed } from "react-twitter-embed";
 import { Carousel, Card } from "@/app/components/ui/apple-cards-carousel";
-import VideoVerse from "../../../public/assests/VideoVerse.png"
 
 const ResponsiveContent = ({ children }: { children: React.ReactNode }) => (
   <div className="w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
