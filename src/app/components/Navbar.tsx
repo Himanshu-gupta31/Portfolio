@@ -4,7 +4,7 @@ import {
     IconBrandGithub,
     IconHome,
   } from "@tabler/icons-react";
-import { LinkedinIcon, LucideLaptop, PaperclipIcon, Twitter, X } from "lucide-react";
+import { LinkedinIcon, LucideLaptop, PaperclipIcon, Twitter } from "lucide-react";
 import { FloatingDock } from './ui/floating-dock';
 function Navbar() {
     const links = [

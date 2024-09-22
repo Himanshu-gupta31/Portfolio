@@ -93,8 +93,8 @@ export const data = [
             <h2 className="text-lg text-black font-semibold">Project Overview:</h2>
             <p className="text-sm sm:text-base text-black">
               As part of the Tech Team at Team Promotions, we enhanced the
-              website's interface. Worked on the UI as well as on the blog feature
-              to help Admins to easily update company activities. We've developed
+              websites`&asop;` interface. Worked on the UI as well as on the blog feature
+              to help Admins to easily update company activities. We`&asop;`ve developed
               a user-friendly Content Management System (CMS) using Django and
               integrated a newsletter feature for regular updates.
             </p>
