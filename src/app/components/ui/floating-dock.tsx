@@ -43,36 +43,29 @@ const FloatingDockMobile = ({
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={cn("relative block md:hidden", className)}>
+    <div className={cn("fixed bottom-4 right-4 block md:hidden", className)}>
       <AnimatePresence>
         {open && (
           <motion.div
             layoutId="nav"
-            className="absolute bottom-full mb-2 inset-x-0 flex flex-col gap-2"
+            initial={{ width: 40, height: 40 }}
+            animate={{ width: 'auto', height: 'auto' }}
+            exit={{ width: 40, height: 40 }}
+            className="absolute bottom-0 right-0 flex items-center bg-gray-200 dark:bg-neutral-800 rounded-full overflow-hidden"
           >
             {items.map((item, idx) => (
               <motion.div
                 key={item.title}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                exit={{
-                  opacity: 0,
-                  y: 10,
-                  transition: {
-                    delay: idx * 0.05,
-                  },
-                }}
-                transition={{ delay: (items.length - 1 - idx) * 0.05 }}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 20 }}
+                transition={{ delay: idx * 0.05 }}
               >
                 <Link
                   href={item.href}
-                  key={item.title}
-                  className="h-10 w-10 rounded-full bg-gray-300 dark:bg-neutral-500 flex items-center justify-center"
+                  className="h-10 w-10 mx-1 rounded-full bg-gray-100 dark:bg-neutral-700 flex items-center justify-center"
                 >
-                  <div className="h-4 w-4">{item.icon}</div> 
+                  <div className="h-6 w-6">{item.icon}</div>
                 </Link>
               </motion.div>
             ))}
@@ -81,13 +74,15 @@ const FloatingDockMobile = ({
       </AnimatePresence>
       <button
         onClick={() => setOpen(!open)}
-        className="h-10 w-10 rounded-full bg-gray-300 dark:bg-neutral-500 flex items-center justify-center"
+        className="h-10 w-10 rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center z-10 relative"
       >
         <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
       </button>
     </div>
   );
 };
+
+
 
 const FloatingDockDesktop = ({
   items,
