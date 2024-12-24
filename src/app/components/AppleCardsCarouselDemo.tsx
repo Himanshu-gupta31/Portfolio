@@ -51,6 +51,34 @@ export function AppleCardsCarouselDemo() {
   );
 }
 export const data = [
+  {
+    title: "LeetRank",
+    category: "A platform to discover college/community rank.",
+    link: "https://leet-rank.vercel.app/",
+    src: "/assests/LeetRank.png",
+    content: (
+      <ResponsiveContent>
+        <ResponsiveLink href="https://music-nest.vercel.app/">
+          <h2 className="text-xl font-bold mb-4">LeetRank</h2>
+        </ResponsiveLink>
+        <ResponsiveTweet tweetId="1861796092905423137" />
+      </ResponsiveContent>
+    ),
+  },
+  {
+    title: "PlayPals",
+    category: "A platform for people to play together.",
+    link: "https://playpals-alpha.vercel.app/",
+    src: "/assests/Playpals.png",
+    content: (
+      <ResponsiveContent>
+        <ResponsiveLink href="https://music-nest.vercel.app/">
+          <h2 className="text-xl font-bold mb-4">PlayPals</h2>
+        </ResponsiveLink>
+        <ResponsiveTweet tweetId="1847921574952735143" />
+      </ResponsiveContent>
+    ),
+  },
     {
       category: "Built a platform for video streaming",
       title: "Video Verse",
