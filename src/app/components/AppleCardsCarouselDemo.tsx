@@ -54,7 +54,7 @@ export const data = [
   {
     title: "LeetRank",
     category: "A platform to discover college/community rank.",
-    link: "https://leet-rank.vercel.app/",
+    link: "https://www.leetrank.com/",
     src: "/assests/LeetRank.png",
     content: (
       <ResponsiveContent>
